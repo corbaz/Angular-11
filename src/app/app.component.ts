@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  //template: '<h1>JCC</h1>',
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'bases';
-}
+export class AppComponent {}

@@ -1,0 +1,21 @@
+<h1>{{ nombre }}</h1>
+
+<!-- Una lista de descripción, con términos y descripciones: -->
+<!-- A description list, with terms and descriptions: -->
+
+<dl>
+    <dt>Nombre:</dt>
+    <dd>{{ nombre }}</dd>
+
+    <dt>Nombre Capitalizado:</dt>
+    <dd>{{ nombreCapitalizado }}</dd>
+
+    <dt>Edad:</dt>
+    <dd>{{ edad }}</dd>
+
+    <dt>Funcion:</dt>
+    <dd>{{ obtenerNombre() }}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">Cambiar Heroe</button>
+<button (click)="cambiarEdad()">Cambiar Edad</button>

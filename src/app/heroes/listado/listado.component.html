@@ -1,0 +1,31 @@
+<div *ngIf="heroes.length > 0; else noHayHeroes" style="color:blue">
+    <p>Listado de Heroes</p>
+    <ul>
+        <li *ngFor="let heroe of heroes; index as i">
+            {{i+1}} - {{heroe}}
+        </li>
+    </ul>
+</div>
+
+<ng-template #noHayHeroes>
+    <p style="color:blue">No hay Listado de Heroes</p>
+</ng-template>
+
+
+<div *ngIf="delheroes.length > 0; else noHayHeroesBorrados" style="color:red">
+    <p>Heroes Borrados</p>
+    <ul>
+        <li *ngFor="let heroe of delheroes; index as i ">{{i+1}} - {{heroe}}</li>
+    </ul>
+</div>
+
+<ng-template #noHayHeroesBorrados>
+    <p style="color:red">No hay Heroes Borrados</p>
+</ng-template>
+
+<div>
+    <button (click)=addAllHeroes()>Add ALL</button>
+    <button (click)=deleteAllHeroes()>Del ALL</button>
+    <button (click)=deleteFirstHeroe()>Del First</button>
+    <button (click)=deleteLastHeroe()>Del Last</button>
+</div>
