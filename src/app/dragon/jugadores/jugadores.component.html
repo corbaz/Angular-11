@@ -1,0 +1,10 @@
+<!-- A description list, with terms and descriptions: -->
+<h3>Jugadores</h3>
+<hr />
+<dl *ngFor="let item of data">
+    <dt>Jugador:</dt>
+    <dd>{{item.name }}</dd>
+    <dd>{{ item.category | number}}</dd>
+    <dd>{{ item.side }}</dd>
+    <hr>
+</dl>

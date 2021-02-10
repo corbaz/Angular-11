@@ -1,0 +1,19 @@
+<h1>Padel 2021</h1>
+<hr />
+
+<div class="row">
+    <div class="col">
+        <app-jugadores [data]="jugadores"></app-jugadores>
+    </div>
+    <div class="col">
+        <h3>Jugador: {{nuevo.name}}</h3>
+        <hr />
+        <form (ngSubmit)="agregar()">
+            <!-- two way data binding -->
+            <input type="text" placeholder="Nombre Jugador" name=nombre [(ngModel)]="nuevo.name" />
+            <input type="number" placeholder="Categoria" name=categoria [(ngModel)]="nuevo.category" />
+            <input type="text" placeholder="Puesto" name=lado [(ngModel)]="nuevo.side" />
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
